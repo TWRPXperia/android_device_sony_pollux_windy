@@ -18,6 +18,7 @@ BOARD_HAVE_RADIO := false
 $(call inherit-product, device/sony/pollux-common/pollux-common.mk)
 
 DEVICE_PACKAGE_OVERLAYS += device/sony/pollux_windy/overlay
+TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/kernel
 
 # Device specific part for two-stage boot
 PRODUCT_COPY_FILES += \
